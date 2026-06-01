@@ -62,6 +62,7 @@ const workerData = {
     badge: 'Ahli',
     badgeClass: 'badge-gold',
     emoji: '🦉',
+    img: 'owl.png',
     tagline: '"Aktif saat dunia tidur."',
     bio: 'Dikenal sebagai burung hantu karena jam kerjanya yang melampaui tengah malam, Owl adalah tulang punggung tim sekaligus admin utama jasanugas_kamu. Dengan kemampuan yang luas di berbagai bidang, Owl bisa menangani hampir semua jenis tugas — dari riset akademik mendalam hingga pengembangan web dan editing video.',
     stats: [
@@ -84,6 +85,7 @@ const workerData = {
     badge: 'Pro',
     badgeClass: 'badge-blue',
     emoji: '🐦‍⬛',
+    img: 'raven.png',
     tagline: '"Logika tajam, hasil presisi."',
     bio: 'Raven adalah sosok multitalenta dengan kemampuan analitis yang kuat. Seperti burung gagak yang cerdas, Raven mampu memecahkan masalah kompleks — dari karya ilmiah yang membutuhkan argumen mendalam, hingga logika pemrograman yang rumit, animasi, dan pengembangan backend.',
     stats: [
@@ -106,6 +108,7 @@ const workerData = {
     badge: 'Pro',
     badgeClass: 'badge-blue',
     emoji: '🐜',
+    img: 'ant.png',
     tagline: '"Kecil tapi tidak ada yang terlewat."',
     bio: 'Jangan remehkan ukurannya — Ant adalah pekerja paling teliti di tim. Dengan keahlian di bidang statistik, animasi, dan fullstack development, Ant mampu menangani tugas dengan detail yang sangat presisi. Tidak ada angka yang salah, tidak ada baris kode yang terlewat.',
     stats: [
@@ -128,6 +131,7 @@ const workerData = {
     badge: 'Specialist',
     badgeClass: 'badge-purple',
     emoji: '🐝',
+    img: 'bee.png',
     tagline: '"Rajin mengumpulkan referensi terbaik."',
     bio: 'Bee adalah spesialis jurnal dan artikel ilmiah di tim. Seperti lebah yang rajin mengumpulkan sari bunga, Bee tekun mencari dan mengolah referensi jurnal dari berbagai sumber terpercaya. Keahliannya dalam penulisan akademik dan analisis data menjadikannya andalan untuk tugas-tugas publikasi ilmiah.',
     stats: [
@@ -150,6 +154,7 @@ const workerData = {
     badge: 'Specialist',
     badgeClass: 'badge-purple',
     emoji: '🦅',
+    img: 'eagle.png',
     tagline: '"Mata tajam untuk detail visual."',
     bio: 'Eagle melihat apa yang orang lain lewatkan. Dengan mata elang untuk estetika dan detail, Eagle mengerjakan semua kebutuhan desain — dari PowerPoint yang memukau, desain grafis, hingga layout jurnal yang rapi. Setiap piksel diperhatikan, setiap warna dipilih dengan cermat.',
     stats: [
@@ -172,6 +177,7 @@ const workerData = {
     badge: 'Elite',
     badgeClass: 'badge-red',
     emoji: '🐺',
+    img: 'wolf.jpeg',
     tagline: '"Bertahan, beradaptasi, mendominasi."',
     bio: 'Wolf memiliki karakter tangguh dengan insting bertahan hidup tingkat ekstrem. Kemampuannya beradaptasi dengan segala kondisi dan teknologi menjadikannya spesialis IT level tertinggi di tim. Dari pengembangan web dan mobile, hingga kecerdasan buatan, IoT, dan riset akademik — Wolf menguasai semuanya dengan presisi seorang predator.',
     stats: [
@@ -220,7 +226,7 @@ function buildModal(key) {
   modalInner.innerHTML = `
     <div class="wm-hero">
       <div class="wm-img-wrap">
-        <img src="public/image/workers/${key}.png" alt="${d.name}"
+        <img src="public/image/workers/${d.img}" alt="${d.name}"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
         <div class="wm-img-fallback" style="display:none">${d.emoji}</div>
       </div>
