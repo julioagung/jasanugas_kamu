@@ -41,7 +41,7 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== WORKER IMAGE FALLBACK =====
-const workerEmojis = { owl: '🦉', raven: '🐦‍⬛', ant: '🐜', bee: '🐝', eagle: '🦅' };
+const workerEmojis = { owl: '🦉', raven: '🐦‍⬛', ant: '🐜', bee: '🐝', eagle: '🦅', wolf: '🐺' };
 document.querySelectorAll('.wk-img').forEach(img => {
   img.addEventListener('error', () => {
     const name = img.alt.toLowerCase();
@@ -165,6 +165,28 @@ const workerData = {
     ],
     skills: ['Graphic Design', 'UI/UX', 'PowerPoint', 'Journal Layout', 'Illustrator', 'Figma'],
     wa: 'Halo%20Eagle%2C%20saya%20mau%20konsultasi%20tugas%20desain'
+  },
+  wolf: {
+    name: 'Wolf',
+    role: 'IT Specialist — Level Tertinggi',
+    badge: 'Elite',
+    badgeClass: 'badge-red',
+    emoji: '🐺',
+    tagline: '"Bertahan, beradaptasi, mendominasi."',
+    bio: 'Wolf memiliki karakter tangguh dengan insting bertahan hidup tingkat ekstrem. Kemampuannya beradaptasi dengan segala kondisi dan teknologi menjadikannya spesialis IT level tertinggi di tim. Dari pengembangan web dan mobile, hingga kecerdasan buatan, IoT, dan riset akademik — Wolf menguasai semuanya dengan presisi seorang predator.',
+    stats: [
+      { label: 'Teknologi Dikuasai', value: '10+' },
+      { label: 'Proyek Selesai', value: '180+' },
+      { label: 'Kepuasan Klien', value: '99%' },
+    ],
+    expertise: [
+      { icon: '🌐', title: 'Web & Flutter Dev', desc: 'Pengembangan aplikasi web modern dan mobile cross-platform menggunakan Flutter.' },
+      { icon: '🤖', title: 'Machine Learning & AI', desc: 'Pembuatan model ML, computer vision, dan NLP untuk kebutuhan riset maupun produk.' },
+      { icon: '📡', title: 'IoT Development', desc: 'Pengembangan sistem Internet of Things — sensor, mikrokontroler, dan integrasi cloud.' },
+      { icon: '📚', title: 'Skripsi & Jurnal', desc: 'Pendampingan skripsi berbasis teknologi dan penulisan jurnal ilmiah bidang IT.' },
+    ],
+    skills: ['Web Dev', 'Flutter Dev', 'IoT Dev', 'Machine Learning', 'Computer Vision', 'NLP', 'Skripsi', 'Journal'],
+    wa: 'Halo%20Wolf%2C%20saya%20mau%20konsultasi%20tugas%20IT'
   }
 };
 

@@ -1219,6 +1219,7 @@ footer {
 .badge-gold   { background: linear-gradient(135deg,#b8860b,#ffd700); color: #1a1000; }
 .badge-blue   { background: linear-gradient(135deg,var(--blue-dark),var(--blue-light)); color: var(--white); }
 .badge-purple { background: linear-gradient(135deg,#5b21b6,#8b5cf6); color: var(--white); }
+.badge-red    { background: linear-gradient(135deg,#991b1b,#ef4444); color: var(--white); }
 
 .wk-short {
   font-size: .8rem;
