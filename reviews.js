@@ -138,6 +138,13 @@ async function handleSubmit(e) {
   const spinner = document.getElementById("submitSpinner");
   const btnText = document.getElementById("submitText");
 
+  // Pastikan Firebase sudah siap
+  if (!db) {
+    errEl.textContent = "Sistem belum dikonfigurasi. Hubungi admin.";
+    errEl.hidden = false;
+    return;
+  }
+
   errEl.hidden = true;
   success.hidden = true;
 
